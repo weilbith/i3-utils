@@ -19,5 +19,5 @@ pkgver() {
 }
 
 package() {
-  install -Dv -t "$pkgdir/usr/bin/" "$srcdir/$pkgname/"{i3-goto-mark,i3-win-info,i3-lock}
+  install -D --target-directory="$pkgdir/usr/bin/" "$srcdir/$pkgname/"{i3-goto-mark,i3-win-info,i3-lock}
 }

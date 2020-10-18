@@ -9,13 +9,12 @@ RED_LIGHT='#ff005f'
 RED_DARK='#af0000'
 
 WALLPAPER=""
-WALLPAPER_DEFAULT="$HOME/images/wallpapers/wallpaper.png"
 
 # Try to parse argument as path for wallpaper image
 if [[ -z "$1" ]]; then
-  if [[ -f "$WALLPAPER_DEFAULT" ]]; then
-    echo "Use default wallpaper ($WALLPAPER_DEFAULT)"
-    WALLPAPER="$WALLPAPER_DEFAULT"
+  if [[ -f "$WALLPAPER_IMAGE_FILE" ]]; then
+    echo "Use default wallpaper ($WALLPAPER_IMAGE_FILE)"
+    WALLPAPER="$WALLPAPER_IMAGE_FILE"
   else
     echo "Missing wallpaper as first argument!"
     exit 1
@@ -25,7 +24,7 @@ else
     echo "Can't find given wallpaper!"
     exit 1
   else
-    WALLPAPER="$1"
+    WALLPAPER="$WALLPAPER_IMAGE_FILE"
   fi
 fi
 

@@ -7,7 +7,7 @@ pkgdesc="Utility script for the i3 window manager"
 arch=('any')
 url="https://github.com/weilbith/i3-utils.git"
 license=('MIT')
-depends=('i3lock-color')
+depends=('i3lock-color-git')
 optdepends=('dmenu: user selection' 'rofi: better dmenu alternative')
 makedepends=('git')
 source=("$pkgname::git+https://github.com/weilbith/i3-utils#branch=master")

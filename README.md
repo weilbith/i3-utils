@@ -1,3 +1,5 @@
+> DEPRACTED! Migrated into custom [AUR](https://github.com/weilbith/AUR).
+
 # i3 Utils
 
 Utility scripts for the [i3](https://i3wm.org/) tiling window manager.
